@@ -1,0 +1,29 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue"
+  ],
+  "compilerOptions": {
+    "strictNullChecks": false,
+    "jsx": "preserve",
+    "ignoreDeprecations": "5.0",
+    "isolatedModules": false,
+    "checkJs": true,
+    "baseUrl": ".",
+    "lib": [
+      "ES2017"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }
+  ]
+}
